@@ -24,7 +24,6 @@ public:
       for(int val : y) {
             x.push_back(val);
         }
-
         return x;
     }
 };
