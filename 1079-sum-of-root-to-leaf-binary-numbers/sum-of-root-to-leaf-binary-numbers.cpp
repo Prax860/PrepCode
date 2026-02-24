@@ -17,7 +17,6 @@ public:
         if(root->left == NULL && root->right == NULL) {
             return curr;
         }
-        return sumRootToLeaf(root->left, curr) +
-               sumRootToLeaf(root->right, curr);
+        return sumRootToLeaf(root->left, curr) + sumRootToLeaf(root->right, curr);
     }
 };
