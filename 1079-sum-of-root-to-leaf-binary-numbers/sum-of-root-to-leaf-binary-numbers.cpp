@@ -13,7 +13,7 @@ class Solution {
 public:
     int sumRootToLeaf(TreeNode* root, int curr = 0) {
         if(root == NULL) return 0;
-        curr = curr * 2 + root->val;
+        curr = (curr << 1) + root->val;
         if(root->left == NULL && root->right == NULL) {
             return curr;
         }
